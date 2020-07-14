@@ -7,7 +7,7 @@ var PORT = process.env.PORT || 3001;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static('public'))
 const notes = [
   {
     title: "Ollie",
@@ -57,10 +57,10 @@ app.post("/api/notes", (req, res) => {
   const newNote = req.body;
 
   notes.push(newNote);
-  console.log(noteString);
+  console.log("newNotes *** :", newNote);
 
   updateDB();
-  res.json(newNote);
+  return res.json(newNote);
 });
 
 app.listen(PORT, () => {
