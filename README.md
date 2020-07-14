@@ -19,8 +19,7 @@ This is an application that can be used to write, save, and delete notes. This a
 
 ## Installation
 
-The express package must be installed in order for this app to work. Do th
-is by entering {npm i express --save} in the command line.
+The express package must be installed in order for this app to work. Do this by entering {npm i express --save} in the command line.
 
 ## Usage
 
